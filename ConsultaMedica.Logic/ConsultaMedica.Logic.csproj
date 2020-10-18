@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Initializer.cs" />
+    <Compile Include="PatientService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +50,7 @@
       <Project>{8315ef1b-297f-4311-8818-5ce36fe2928c}</Project>
       <Name>ConsultaMedica.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ConsultaMedica.Transfer\ConsultaMedica.Shared.csproj">
+    <ProjectReference Include="..\ConsultaMedica.Shared\ConsultaMedica.Shared.csproj">
       <Project>{0ee25fc5-7152-40e9-a4e0-8db9f9839751}</Project>
       <Name>ConsultaMedica.Shared</Name>
     </ProjectReference>

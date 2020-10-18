@@ -77,3 +77,14 @@ C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\obj\De
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\obj\Debug\ConsultaMedica.WebUI.csproj.CopyComplete
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\obj\Debug\ConsultaMedica.WebUI.dll
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\obj\Debug\ConsultaMedica.WebUI.pdb
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Logic.dll
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Shared.dll
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Logic.pdb
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Shared.pdb
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Data.dll
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.dll
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Data.pdb
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Data.dll.config
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.xml
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.SqlServer.xml

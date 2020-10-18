@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\ExamType.cs" />
-    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\PatientModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
