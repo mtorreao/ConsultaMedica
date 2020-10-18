@@ -10,8 +10,10 @@ namespace ConsultaMedica.Shared.Models
         public string Name { get; set; }
         [Required(), StringLength(14, MinimumLength = 14)]
         public string CPF { get; set; }
+
         [Required(), DisplayName("Data Nascimento")]
         public DateTime BirthDate { get; set; }
+
         [DisplayName("Sexo")]
         public char Sex { get; set; }
         [DisplayName("Telefone")]

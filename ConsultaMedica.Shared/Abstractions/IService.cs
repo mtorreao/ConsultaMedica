@@ -1,9 +1,10 @@
 ﻿using ConsultaMedica.Shared.Models;
+using System;
 using System.Collections.Generic;
 
 namespace ConsultaMedica.Shared
 {
-    public interface IService<T> where T : BaseModel
+    public interface IService<T> : IDisposable where T : BaseModel
     {
         public List<T> List();
         public void Add(T model);

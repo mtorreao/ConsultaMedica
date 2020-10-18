@@ -4,6 +4,7 @@ using ConsultaMedica.Data.Models;
 using ConsultaMedica.Data.Repositories;
 using ConsultaMedica.Shared;
 using ConsultaMedica.Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,6 +14,7 @@ namespace ConsultaMedica.Logic
     {
         private readonly GenericRepository<Patient> repository;
         private readonly ConsultaMedicaContext context;
+        private bool isDisposed = false;
 
         public PatientService()
         {
@@ -66,6 +68,24 @@ namespace ConsultaMedica.Logic
                 Phone = dataModel.Phone,
                 Sex = dataModel.Sex
             };
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (isDisposed) return;
+
+            if (disposing)
+            {
+                context.Dispose();
+            }
+
+            isDisposed = true;
         }
     }
 }

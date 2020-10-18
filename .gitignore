@@ -3,18 +3,12 @@
 ################################################################################
 
 /.vs/*
-/ConsultaMedica.Shared/obj/*
-/ConsultaMedica.Logic/bin/*
-/ConsultaMedica.Data    /bin/*
+packages/*
 /ConsultaMedica.Data/obj/*
-/ConsultaMedica.Logic/obj/*
-ConsultaMedica.WebUI/bin/ConsultaMedica.Data.pdb
-ConsultaMedica.WebUI/bin/ConsultaMedica.Data.dll
-ConsultaMedica.WebUI/bin/ConsultaMedica.Data.pdb
-ConsultaMedica.WebUI/bin/ConsultaMedica.WebUI.dll
-ConsultaMedica.WebUI/bin/ConsultaMedica.WebUI.pdb
-ConsultaMedica.WebUI/obj/Debug/ConsultaMedica.WebUI.csprojAssemblyReference.cache
-ConsultaMedica.WebUI/obj/Debug/ConsultaMedica.WebUI.dll
-ConsultaMedica.WebUI/obj/Debug/ConsultaMedica.WebUI.pdb
-ConsultaMedica.WebUI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.csprojAssemblyReference.cache
+ConsultaMedica.Data/bin/*
+ConsultaMedica.Logic/obj/*
+ConsultaMedica.Logic/bin/*
+ConsultaMedica.Shared/obj/*
+ConsultaMedica.Shared/bin/*
+ConsultaMedica.WebUI/obj/*
+ConsultaMedica.WebUI/bin/*

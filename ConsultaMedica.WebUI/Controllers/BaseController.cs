@@ -136,5 +136,14 @@ namespace ConsultaMedica.WebUI.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                Service.Dispose();
+            }
+            base.Dispose(disposing);
+        }
     }
 }
