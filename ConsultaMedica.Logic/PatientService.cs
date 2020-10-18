@@ -20,8 +20,7 @@ namespace ConsultaMedica.Logic
         public List<PatientModel> GetPatients()
         {
             var patients = repository.List();
-            var sql = patients.ToString();
-            return patients.Select(d => new PatientModel { CPF = d.CPF, Email = d.Email, Name = d.Name, BirthDate = d.BirthDate, Phone = d.Phone, Sex = d.Sex }).ToList();
+            return patients.Select(d => new PatientModel { ID = d.ID, CPF = d.CPF, Email = d.Email, Name = d.Name, BirthDate = d.BirthDate, Phone = d.Phone, Sex = d.Sex }).ToList();
         }
 
         public void Add(PatientModel model)

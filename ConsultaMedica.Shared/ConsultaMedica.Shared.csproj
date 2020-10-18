@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\ExamType.cs" />
     <Compile Include="Models\PatientModel.cs" />

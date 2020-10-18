@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsultaMedica.Shared.Models
 {
-    public class ExamType : BaseModel
+    public class BaseModel
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public int ID { get; set; }
     }
 }
