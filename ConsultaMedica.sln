@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.WebUI", "ConsultaMedica\ConsultaMedica.WebUI.csproj", "{02104E4D-BDD8-4E2F-B1D6-40767AB3C787}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.WebUI", "ConsultaMedica.WebUI\ConsultaMedica.WebUI.csproj", "{02104E4D-BDD8-4E2F-B1D6-40767AB3C787}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.Data", "ConsultaMedica.Data\ConsultaMedica.Data.csproj", "{8315EF1B-297F-4311-8818-5CE36FE2928C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.Logic", "ConsultaMedica.Logic\ConsultaMedica.Logic.csproj", "{C78B0020-E74E-42F7-8133-D449B8BB638F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.Tests", "ConsultaMedica.Tests\ConsultaMedica.Tests.csproj", "{0E16FF7E-7842-46F2-9446-1A81D7397441}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.Shared", "ConsultaMedica.Transfer\ConsultaMedica.Shared.csproj", "{0EE25FC5-7152-40E9-A4E0-8DB9F9839751}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaMedica.Shared", "ConsultaMedica.Shared\ConsultaMedica.Shared.csproj", "{0EE25FC5-7152-40E9-A4E0-8DB9F9839751}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
