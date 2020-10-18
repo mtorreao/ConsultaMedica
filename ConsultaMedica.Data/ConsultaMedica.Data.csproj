@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsultaMedicaContext.cs" />
+    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\ExamType.cs" />
     <Compile Include="Models\Patient.cs" />

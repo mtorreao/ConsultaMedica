@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ConsultaMedica.Data.Models
 {
-    public class Patient
+    public class Patient : BaseModel
     {
         public string Nome { get; set; }
         public string CPF { get; set; }
@@ -11,6 +11,6 @@ namespace ConsultaMedica.Data.Models
         public char Sex { get; set; }
         public int Phone { get; set; }
         public string Email { get; set; }
-        public List<Exam> Exams { get; set; }
+        public virtual ICollection<Exam> Exams { get; set; }
     }
 }
