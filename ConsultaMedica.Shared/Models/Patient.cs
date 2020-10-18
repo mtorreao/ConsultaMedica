@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsultaMedica.Transfer
+namespace ConsultaMedica.Shared.Models
 {
     public class Patient
     {

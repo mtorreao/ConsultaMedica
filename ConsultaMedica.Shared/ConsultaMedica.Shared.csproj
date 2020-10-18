@@ -7,8 +7,8 @@
     <ProjectGuid>{0EE25FC5-7152-40E9-A4E0-8DB9F9839751}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsultaMedica.Transfer</RootNamespace>
-    <AssemblyName>ConsultaMedica.Transfer</AssemblyName>
+    <RootNamespace>ConsultaMedica.Shared</RootNamespace>
+    <AssemblyName>ConsultaMedica.Shared</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Patient.cs" />
+    <Compile Include="Models\Exam.cs" />
+    <Compile Include="Models\ExamType.cs" />
+    <Compile Include="Models\Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
