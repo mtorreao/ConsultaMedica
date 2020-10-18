@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<ConsultaMedica.Shared.Models.PatientModel>
 
 @{
-    ViewBag.Title = "Index";
+    var a = false;
+
 }
 
 <h2>Pacientes</h2>
@@ -9,10 +10,20 @@
 <p>
     @Html.ActionLink("Novo Paciente", "Create")
 </p>
+
+@using (Html.BeginForm("Index", "Patient", FormMethod.Get, new { Class = "form-inline" }))
+{
+    <p>
+        Pesquisa(Nome ou CPF): @Html.TextBox("SearchString", "", new { Class = "form-control"})
+        <input type="submit" class="btn btn-primary" value="Buscar" />
+        <input type="button" class="btn btn-default" value="Limpar" />
+    </p>
+}
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.ActionLink("Nome", "Index", new { orderBy = ViewBag.NameSortParm })
         </th>
         <th>
             @Html.DisplayNameFor(model => model.CPF)

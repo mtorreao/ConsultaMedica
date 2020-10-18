@@ -1,7 +1,6 @@
 ﻿using ConsultaMedica.Logic;
 using ConsultaMedica.Shared.Models;
-using System.Data;
-using System.Net;
+using System;
 using System.Web.Mvc;
 
 namespace ConsultaMedica.WebUI.Controllers

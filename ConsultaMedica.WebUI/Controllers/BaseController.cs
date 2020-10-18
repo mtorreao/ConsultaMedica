@@ -1,5 +1,6 @@
 ﻿using ConsultaMedica.Shared;
 using ConsultaMedica.Shared.Models;
+using System;
 using System.Data;
 using System.Net;
 using System.Web.Mvc;
@@ -16,9 +17,13 @@ namespace ConsultaMedica.WebUI.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Index(string orderBy, string searchString)
         {
-            return View(Service.List());
+            orderBy = orderBy?.ToLower();
+            ViewBag.NameSortParm = String.IsNullOrEmpty(orderBy) ? "name_desc" : "";
+            ViewBag.DateSortParm = orderBy == "Date" ? "date_desc" : "Date";
+
+            return View(Service.List(orderBy, searchString));
         }
 
         [HttpGet]

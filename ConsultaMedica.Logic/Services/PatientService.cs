@@ -7,6 +7,7 @@ using ConsultaMedica.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace ConsultaMedica.Logic
 {
@@ -50,9 +51,25 @@ namespace ConsultaMedica.Logic
             repository.Save();
         }
 
-        public List<PatientModel> List()
+        public List<PatientModel> List(string orderBy = null, string searchString = null)
         {
             var patients = repository.List();
+
+            if (orderBy != null)
+            {
+                patients = orderBy switch
+                {
+                    "name_desc" => patients.OrderByDescending(s => s.Name),
+                    _ => patients.OrderBy(s => s.Name),
+                };
+            }
+
+            if (searchString != null)
+            {
+                var regex = new Regex(searchString, RegexOptions.IgnoreCase);
+                patients = patients.Where(p => regex.IsMatch(p.CPF) || regex.IsMatch(p.Name));
+            }
+
             return patients.Select(d => new PatientModel { ID = d.ID, CPF = d.CPF, Email = d.Email, Name = d.Name, BirthDate = d.BirthDate, Phone = d.Phone, Sex = d.Sex }).ToList();
         }
 
