@@ -1,4 +1,5 @@
-﻿using ConsultaMedica.Data.Models;
+﻿using ConsultaMedica.Data.Contexts;
+using ConsultaMedica.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

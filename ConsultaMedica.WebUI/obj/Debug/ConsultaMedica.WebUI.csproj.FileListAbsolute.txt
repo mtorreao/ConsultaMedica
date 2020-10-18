@@ -88,3 +88,4 @@ C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\Co
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.xml
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.SqlServer.dll
 C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\matheus.torreao\source\repos\ConsultaMedica\ConsultaMedica.WebUI\bin\ConsultaMedica.Logic.dll.config

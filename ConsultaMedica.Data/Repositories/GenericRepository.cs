@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsultaMedica.Data.Contexts;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace ConsultaMedica.Data.Repositories
             Util.EnsureStaticReference<System.Data.Entity.SqlServer.SqlProviderServices>();
         }
 
-        protected GenericRepository(ConsultaMedicaContext context)
+        public GenericRepository(ConsultaMedicaContext context)
         {
             this.context = context;
             this.dbSet = context.Set<TEntity>();
@@ -79,6 +80,11 @@ namespace ConsultaMedica.Data.Repositories
         {
             dbSet.Attach(entityToUpdate);
             context.Entry(entityToUpdate).State = EntityState.Modified;
+        }
+
+        public virtual void SaveChanges()
+        {
+            context.SaveChanges();
         }
     }
 }
