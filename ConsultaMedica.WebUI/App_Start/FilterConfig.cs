@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace ConsultaMedica
+namespace ConsultaMedica.WebUI
 {
     public class FilterConfig
     {

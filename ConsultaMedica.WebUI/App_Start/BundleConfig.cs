@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ConsultaMedica
+namespace ConsultaMedica.WebUI
 {
     public class BundleConfig
     {

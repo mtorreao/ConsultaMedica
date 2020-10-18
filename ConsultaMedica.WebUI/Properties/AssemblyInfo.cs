@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ConsultaMedica")]
+[assembly: AssemblyTitle("ConsultaMedica.WebUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ConsultaMedica")]
+[assembly: AssemblyProduct("ConsultaMedica.WebUI")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0af19708-eb0d-42e6-931f-001c82fc1858")]
+[assembly: Guid("c82afe43-c1de-402b-b16f-0b8ac3bd1bf2")]
 
 // Version information for an assembly consists of the following four values:
 //
