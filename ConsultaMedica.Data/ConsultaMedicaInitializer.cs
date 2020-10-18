@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace ConsultaMedica.Data
 {
-    public class ConsultaMedicaInitializer : DropCreateDatabaseIfModelChanges<ConsultaMedicaContext>
+    public class ConsultaMedicaInitializer : DropCreateDatabaseAlways<ConsultaMedicaContext>
     {
         protected override void Seed(ConsultaMedicaContext context)
         {

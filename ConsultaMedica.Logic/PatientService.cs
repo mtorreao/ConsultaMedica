@@ -3,6 +3,7 @@ using ConsultaMedica.Data.Contexts;
 using ConsultaMedica.Data.Models;
 using ConsultaMedica.Data.Repositories;
 using ConsultaMedica.Shared.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,11 +13,13 @@ namespace ConsultaMedica.Logic
     {
         private readonly GenericRepository<Patient> repository;
         private readonly ConsultaMedicaContext context;
+
         public PatientService()
         {
             context = new ConsultaMedicaContext();
             repository = new PatientRepository(context);
         }
+
         public List<PatientModel> GetPatients()
         {
             var patients = repository.List();
@@ -26,7 +29,7 @@ namespace ConsultaMedica.Logic
         public void Add(PatientModel model)
         {
             repository.Insert(new Patient { Name = model.Name, BirthDate = model.BirthDate, CPF = model.CPF, Email = model.Email, Phone = model.Phone, Sex = model.Sex });
-            context.SaveChanges();
+            repository.Save();
         }
 
         public PatientModel GetById(int id)
@@ -41,6 +44,28 @@ namespace ConsultaMedica.Logic
                 Phone = dataModel.Phone,
                 Sex = dataModel.Sex
             };
+        }
+
+        public void Update(PatientModel model)
+        {
+            var dataModel = new Patient
+            {
+                ID = model.ID,
+                CPF = model.CPF,
+                Email = model.Email,
+                BirthDate = model.BirthDate,
+                Name = model.Name,
+                Phone = model.Phone,
+                Sex = model.Sex
+            };
+            repository.Update(dataModel);
+            repository.Save();
+        }
+
+        public void Remove(int id)
+        {
+            repository.Delete(id);
+            repository.Save();
         }
     }
 }

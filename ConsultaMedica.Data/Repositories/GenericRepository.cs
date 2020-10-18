@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace ConsultaMedica.Data.Repositories
 {
-    public abstract class GenericRepository<TEntity> where TEntity : class
+    public abstract class GenericRepository<TEntity> where TEntity : ConsultaMedica.Data.Models.BaseModel
     {
         internal ConsultaMedicaContext context;
         internal DbSet<TEntity> dbSet;
@@ -51,9 +51,9 @@ namespace ConsultaMedica.Data.Repositories
             }
         }
 
-        public virtual TEntity GetByID(object id)
+        public virtual TEntity GetByID(int id)
         {
-            return dbSet.Find(id);
+            return dbSet.AsNoTracking().FirstOrDefault(e => e.ID == id);
         }
 
         public virtual void Insert(TEntity entity)
@@ -78,11 +78,12 @@ namespace ConsultaMedica.Data.Repositories
 
         public virtual void Update(TEntity entityToUpdate)
         {
+            context.Entry(entityToUpdate).State = EntityState.Detached;
             dbSet.Attach(entityToUpdate);
             context.Entry(entityToUpdate).State = EntityState.Modified;
         }
 
-        public virtual void SaveChanges()
+        public virtual void Save()
         {
             context.SaveChanges();
         }
