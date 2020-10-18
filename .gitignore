@@ -3,3 +3,17 @@
 ################################################################################
 
 /.vs/ConsultaMedica
+/ConsultaMedica.Transfer/obj/Debug
+/ConsultaMedica.Transfer/bin/Debug
+/ConsultaMedica.Logic/bin/Debug
+/ConsultaMedica.Data/bin/Debug
+/ConsultaMedica.Data/obj/Debug/ConsultaMedica.Data.csproj.FileListAbsolute.txt
+/ConsultaMedica.Data/obj/Debug/ConsultaMedica.Data.csproj.CoreCompileInputs.cache
+/ConsultaMedica.Data/obj/Debug/ConsultaMedica.Data.csproj.CopyComplete
+/ConsultaMedica.Data/obj/Debug/ConsultaMedica.Data.pdb
+/ConsultaMedica.Data/obj/Debug/ConsultaMedica.Data.dll
+/ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.csproj.FileListAbsolute.txt
+/ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.csproj.CoreCompileInputs.cache
+/ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.csproj.CopyComplete
+/ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.pdb
+/ConsultaMedica.Logic/obj/Debug/ConsultaMedica.Logic.dll
