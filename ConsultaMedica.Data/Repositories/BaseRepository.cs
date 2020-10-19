@@ -1,29 +1,29 @@
 ﻿using ConsultaMedica.Data.Contexts;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
 namespace ConsultaMedica.Data.Repositories
 {
-    public abstract class GenericRepository<TEntity> where TEntity : ConsultaMedica.Data.Models.BaseModel
+    public abstract class BaseRepository<TEntity> : IDisposable where TEntity : Models.BaseModel
     {
         internal ConsultaMedicaContext context;
         internal DbSet<TEntity> dbSet;
+        private bool isDisposed = false;
 
-        static GenericRepository()
+        static BaseRepository()
         {
             Util.EnsureStaticReference<System.Data.Entity.SqlServer.SqlProviderServices>();
         }
 
-        public GenericRepository(ConsultaMedicaContext context)
+        protected BaseRepository(ConsultaMedicaContext context)
         {
             this.context = context;
             this.dbSet = context.Set<TEntity>();
         }
 
-        public virtual IEnumerable<TEntity> List(
+        public virtual IQueryable<TEntity> List(
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
             string includeProperties = "")
@@ -43,11 +43,11 @@ namespace ConsultaMedica.Data.Repositories
 
             if (orderBy != null)
             {
-                return orderBy(query).ToList();
+                return orderBy(query);
             }
             else
             {
-                return query.ToList();
+                return query;
             }
         }
 
@@ -86,6 +86,24 @@ namespace ConsultaMedica.Data.Repositories
         public virtual void Save()
         {
             context.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (isDisposed) return;
+
+            if (disposing)
+            {
+                context.Dispose();
+            }
+
+            isDisposed = true;
         }
     }
 }

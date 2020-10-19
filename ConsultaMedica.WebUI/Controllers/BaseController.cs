@@ -1,5 +1,5 @@
 ﻿using ConsultaMedica.Shared;
-using ConsultaMedica.Shared.Models;
+using ConsultaMedica.Shared.ViewModels;
 using System;
 using System.Data;
 using System.Net;
@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace ConsultaMedica.WebUI.Controllers
 {
-    public class BaseController<T> : Controller where T : BaseModel
+    public class BaseController<T> : Controller where T : BaseViewModel
     {
         protected IService<T> Service { get; set; }
 
@@ -29,7 +29,7 @@ namespace ConsultaMedica.WebUI.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            return View(new PatientModel());
+            return View(new PatientViewModel());
         }
 
         [HttpPost]

@@ -2,16 +2,19 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ConsultaMedica.Shared.Models
+namespace ConsultaMedica.Shared.ViewModels
 {
-    public class PatientModel : BaseModel
+    public class PatientViewModel : BaseViewModel
     {
         [Required(), DisplayName("Nome"), StringLength(50, MinimumLength = 3)]
         public string Name { get; set; }
         [Required(), StringLength(14, MinimumLength = 14)]
         public string CPF { get; set; }
 
-        [Required(), DisplayName("Data Nascimento")]
+        [Required(ErrorMessage = "Preencher campo Data de Nascimento"),
+            DisplayName("Data Nascimento"),
+            DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}"),
+            DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
         public DateTime BirthDate { get; set; }
 
         [DisplayName("Sexo")]

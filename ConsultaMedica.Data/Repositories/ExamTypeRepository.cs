@@ -3,9 +3,9 @@ using ConsultaMedica.Data.Models;
 
 namespace ConsultaMedica.Data.Repositories
 {
-    public class PatientRepository : BaseRepository<Patient>
+    public class ExamTypeRepository : BaseRepository<ExamType>
     {
-        public PatientRepository(ConsultaMedicaContext context) : base(context)
+        public ExamTypeRepository(ConsultaMedicaContext context) : base(context)
         {
         }
     }

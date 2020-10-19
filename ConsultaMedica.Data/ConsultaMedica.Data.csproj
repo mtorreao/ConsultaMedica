@@ -58,7 +58,8 @@
   <ItemGroup>
     <Compile Include="Contexts\ConsultaMedicaContext.cs" />
     <Compile Include="ConsultaMedicaInitializer.cs" />
-    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\ExamTypeRepository.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
     <Compile Include="Repositories\PatientRepository.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Models\BaseModel.cs" />

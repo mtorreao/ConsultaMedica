@@ -1,7 +1,7 @@
 ﻿
-namespace ConsultaMedica.Shared.Models
+namespace ConsultaMedica.Shared.ViewModels
 {
-    public class ExamTypeModel : BaseModel
+    public class ExamTypeViewModel : BaseViewModel
     {
         public string Name { get; set; }
         public string Description { get; set; }

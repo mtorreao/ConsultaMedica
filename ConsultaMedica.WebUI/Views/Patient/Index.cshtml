@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ConsultaMedica.Shared.Models.PatientModel>
+﻿@model IEnumerable<ConsultaMedica.Shared.ViewModels.PatientViewModel>
 
 @{
     var a = false;
@@ -14,9 +14,8 @@
 @using (Html.BeginForm("Index", "Patient", FormMethod.Get, new { Class = "form-inline" }))
 {
     <p>
-        Pesquisa(Nome ou CPF): @Html.TextBox("SearchString", "", new { Class = "form-control"})
+        Pesquisa(Nome ou CPF): @Html.TextBox("SearchString", "", new { Class = "form-control" })
         <input type="submit" class="btn btn-primary" value="Buscar" />
-        <input type="button" class="btn btn-default" value="Limpar" />
     </p>
 }
 

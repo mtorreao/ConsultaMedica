@@ -45,10 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstractions\IService.cs" />
-    <Compile Include="Models\BaseModel.cs" />
-    <Compile Include="Models\ExamModel.cs" />
-    <Compile Include="Models\ExamTypeModel.cs" />
-    <Compile Include="Models\PatientModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ExamViewModel.cs" />
+    <Compile Include="ViewModels\ExamTypeViewModel.cs" />
+    <Compile Include="ViewModels\PatientViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

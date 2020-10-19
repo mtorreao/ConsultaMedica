@@ -1,4 +1,5 @@
-﻿
+﻿using ConsultaMedica.Logic.Mappers;
+
 namespace ConsultaMedica.Logic
 {
     public static class Initializer
@@ -6,6 +7,7 @@ namespace ConsultaMedica.Logic
         public static void Start()
         {
             Data.Initializer.Start();
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }
