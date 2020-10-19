@@ -60,6 +60,7 @@
     <Compile Include="ConsultaMedicaInitializer.cs" />
     <Compile Include="Repositories\ExamTypeRepository.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\ExamRepository.cs" />
     <Compile Include="Repositories\PatientRepository.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Models\BaseModel.cs" />

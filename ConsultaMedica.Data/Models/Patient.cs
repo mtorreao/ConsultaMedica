@@ -18,7 +18,7 @@ namespace ConsultaMedica.Data.Models
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
-        public char Sex { get; set; }
+        public Sex Sex { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
@@ -27,5 +27,11 @@ namespace ConsultaMedica.Data.Models
         public string Email { get; set; }
 
         public virtual ICollection<Exam> Exams { get; set; }
+    }
+
+    public enum Sex
+    {
+        MASCULINE,
+        FEMININE
     }
 }

@@ -74,6 +74,7 @@
     <Compile Include="Initializer.cs" />
     <Compile Include="Mappers\AutoMapperConfig.cs" />
     <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\ExamService.cs" />
     <Compile Include="Services\ExamTypeService.cs" />
     <Compile Include="Services\PatientService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

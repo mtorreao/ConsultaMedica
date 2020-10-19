@@ -18,9 +18,15 @@ namespace ConsultaMedica.Shared.ViewModels
         public DateTime BirthDate { get; set; }
 
         [DisplayName("Sexo")]
-        public char Sex { get; set; }
+        public Sex Sex { get; set; }
         [DisplayName("Telefone")]
         public string Phone { get; set; }
         public string Email { get; set; }
+    }
+
+    public enum Sex
+    {
+        MASCULINE,
+        FEMININE
     }
 }

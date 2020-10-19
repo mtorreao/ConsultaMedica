@@ -5,6 +5,6 @@ namespace ConsultaMedica.Shared.ViewModels
     {
         public string Name { get; set; }
         public string Observations { get; set; }
-        public ExamTypeViewModel Type { get; set; }
+        public ExamTypeViewModel ExamType { get; set; }
     }
 }
